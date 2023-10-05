@@ -1,0 +1,162 @@
+﻿<div id="html5">
+
+<h2>
+        Shortcuts to the sections:
+        <a href="#section1">Section 1</a>,
+        <a href="#section2">Section 2</a>,
+        <a href="#section3">Section 3</a>,
+        <a href="#section4">Section 4</a>,
+        <a href="#section5">Section 5</a>,
+        <a href="#section6">Section 6</a>
+    </h2>
+    <article class="row">
+        <!---Heading--->
+        <section class="col-md-4 col-sm-6 col-12" id="section1">
+            <header class="oxygen">1. Heading elements</header>
+            <h1 class="niconne">This is h1 heading</h1>
+            <h3>This is h3 heading</h3>
+            <h6>This is h6 heading</h6>
+        </section>
+
+        <section class="col-md-4 col-sm-6 col-12" id="section2">
+            <header>2. Paragraph, line break, block div and link</header>
+            <p>This is <br />a paragraph<br /> with line breaks</p>
+            <p>This is a paragraph without line breaks</p>
+            <div>This line uses block &lt;div&gt; element</div>
+            <div>This line also uses block &lt;div&gt; element</div>
+            <a href="https://www.canberra.edu.au">This is a link to UC website</a>
+        </section>
+        <!--Text Format -->
+        <section class="col-md-4 col-sm-6 col-12" id="section3">
+            <header>3. Text Format</header>
+            <pre>This is a preformatted text
+               using HTML5 pre element
+        </pre>
+            <p>This text is <b>bold</b>, <i>italic</i>, and <em>emphasized</em> using b, i, and em elements, respectively. </p>
+            <h3>This text uses <mark>mark element</mark> and <ins>ins element</ins></h3>
+            <h3>This text uses <sup>sup element</sup> and <sub>sub element</sub></h3>
+        </section>
+        <!--Image and video-->
+        <section class="col-md-4 col-sm-6 col-12" id="section4">
+            <header>4. Figure, img, video and iframe for YouTube</header>
+            <figure>
+                <img width="100"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-
+HTML5_logo_and_wordmark.svg.png" />
+                <figcaption>Fig 1: HTML5 logo</figcaption>
+            </figure>
+
+            <figure>
+                <img src="~/images/canberra.jpg" />
+                <figcaption id="canberra">Canberra</figcaption>
+            </figure>
+
+            <br />
+
+            <div class="video-container">
+                <video width="300" loop muted autoplay="autoplay" preload="auto">
+                    <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div>Big Buck Bunny</div>
+            </div>
+            <br />
+
+
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/XMUYoiUlutM" title="YouTube
+video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+        </section>
+        <!--The <input> element and its attributes-->
+        <section class="col-md-4 col-sm-6 col-12" id="section5">
+            <header>5. The input element and its attributes</header>
+            <span>Input element:</span><input autofocus />
+            <p>Input element with placeholder attribute:</p>
+            <input placeholder="Enter your password" />
+            <p>Input element with value attribute:</p>
+            <input value="Enter your password" />
+            <p>Input element with value and disabled attributes:</p>
+            <input value="Enter your password" disabled />
+            <p>Input element with value and readonly attributes:</p>
+            <input value="Enter your password" readonly />
+            <p>Calendar</p>
+            <input type="date" />
+            <p>Checkbox</p>
+            <input type="checkbox" /> Tick me
+            <p>Button</p>
+            <input type="submit" value="Click me" />
+            <p>Radiobuttons</p>
+            <input type="radio" /> Red
+            <input type="radio" /> Green
+            <input type="radio" /> Blue
+            <p>Radiobuttons grouped by name attribute</p>
+            <input type="radio" name="colour" /> Red
+            <input type="radio" name="colour" /> Green
+            <input type="radio" name="colour" /> Blue
+        </section>
+        <!--Table and Lists -->
+        <section class="col-md-4 col-sm-6 col-12" id="section6">
+            <header>6. Table, unordered list, ordered list and dropdown list</header>
+            <p>Table</p>
+            <table border="1">
+                <tr>
+                    <th>Tutorials</th>
+                    <th>Assignment 1</th>
+                    <th>Assignment 2</th>
+                </tr>
+                <tr>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>30%</td>
+                </tr>
+            </table>
+            <p>Unordered List</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+            <p>Ordered List</p>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ol>
+            <p>Dropdown lists</p>
+            <select name="phones">
+                <option value="iphone">iPhone</option>
+                <option value="ss">Samsung</option>
+            </select>
+            <select name="phones">
+                <option disabled selected >Select an option</option>
+                <option value="iphone">iPhone</option>
+                <option value="ss">Samsung</option>
+            </select>
+            <p>Font Awesome</p>
+            <div>
+                <i class="fa fa-book"></i> Book <br />
+                <i class="fa fa-home"></i> Home <br />
+                <i class="fa fa-refresh"></i> Refresh <br />
+                <i class="fa fa-facebook"></i> Facebook <br />
+                <i class="fa fa-twitter"></i> Twitter <br />
+            </div>
+
+        </section>
+    </article>
+    <section>
+        <header>7. Responsive Image using Bootstrap</header>
+        <picture>
+            <source media="(min-width: 992px)" srcset="~/images/floriade_md.jpg">
+            <source media="(min-width: 768px)" srcset="~/images/floriade_sm.jpg">
+            <img src="~/images/floriade_xs.jpg" alt="Floriade" class="img-fluid">
+        </picture>
+    </section>
+
+    <div class="padding-space"></div>
+    <script src="js/myjs.js"></script>
+    <script src="js/myjq.js"></script>
+    </div>
